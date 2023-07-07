@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pyavd-lab"
+version = "0.1.0"
+description = ""
+authors = ["Fred Hsu <fredlhsu@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pyavd_lab"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyavd = "^4.0.0a2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

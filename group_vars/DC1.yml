@@ -1,0 +1,17 @@
+# OOB Management network default gateway
+mgmt_gateway: 172.100.100.1
+mgmt_interface: Management0
+
+# dns servers.
+name_servers:
+  - 8.8.4.4
+  - 8.8.8.8
+
+# NTP Servers IP or DNS name, first NTP server will be preferred, and sourced from Management VRF
+ntp:
+  servers:
+    - name: time.google.com
+      preferred: true
+      vrf: MGMT
+    - name: pool.ntp.org
+      vrf: MGMT
